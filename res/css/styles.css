@@ -5,10 +5,9 @@
 }
 html {
 	letter-spacing: 1.2px;
-	/* background: #333; */
-	background: #7F7FD5;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	background: #7F7FD5;
+	background: -webkit-linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5);
+	background: linear-gradient(to top, #91EAE4, #86A8E7, #7F7FD5);
 
 }
 html,
@@ -45,10 +44,8 @@ body {
 .power-switch,
 .settings {
 	display: flex;
-	/* width: 100%; */
 	flex-flow: row nowrap;
 	justify-content: center;
-	/* align-items: stretch; */
 }
 
 .t-item,
@@ -98,6 +95,7 @@ body {
 .bri {
 	margin-top: 10px;
 }
+
 .color {
 	margin-top: 20px;
 	width: 50%;
@@ -134,7 +132,6 @@ body {
 	height: 14px;
 	border: 0;
 	border-radius: 50%;
-
 }
 
 .bri-slider::-moz-range-thumb {
@@ -175,108 +172,6 @@ label[id^='color-input-label-'] {
 	margin-left: 20px;
 }
 
-
-
-
-
-
-
-/* 
-#living-title-box {
-	grid-column: 1 / 2;
-	grid-row: 1 / 2;
-	
-}
-
-#kitchen-title-box {
-	grid-column: 2 / 3;
-	grid-row: 1 / 2;
-	
-}
-
-#desk-title-box {
-	grid-column: 3 / 4;
-	grid-row: 1 / 2;	
-}
-
-#living-switch-box {
-	grid-column: 1 / 2;
-	grid-row: 2 / 3;
-	
-}
-
-#kitchen-switch-box {
-	grid-column: 2 / 3;
-	grid-row: 2 / 3;
-	
-}
-
-#desk-switch-box {
-	grid-column: 3 / 4;
-	grid-row: 2 / 3;
-}
-
-#living-settings-box {
-	grid-column: 1 / 2;
-	grid-row: 3 / 4;
-	
-}
-
-#kitchen-settings-box {
-	grid-column: 2 / 3;
-	grid-row: 3 / 4;
-}
-
-#desk-settings-box {
-	grid-column: 3 / 4;
-	grid-row: 3 / 4;	
-}
-
-#living-title-box,
-#kitchen-title-box,
-#desk-title-box {
-	border-top-left-radius: 20px;
-	border-top-right-radius: 20px;
-	border-right: 1px solid #FAFAFA;
-	color: #FAFAFA;
-	font-weight: bold;
-	transition: background-color 0.5 ease;
-}
-
-#living-settings-box,
-#kitchen-settings-box,
-#desk-settings-box {
-	display: flex;
-	flex-direction: column;
-	border-top-right-radius: 20px;
-	border-top-left-radius: 20px;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	border-right: 1px solid #FAFAFA;
-	color: #FAFAFA;
-	font-weight: bold;
-	transition: background-color 0.5 ease;
-}
-
-#living-switch-box,
-#kitchen-switch-box,
-#desk-switch-box {
-	height: 100%;
-	display: -webkit-box;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-			flex-direction: column;
-	-webkit-box-pack: center;
-			justify-content: center;
-	-webkit-box-align: center;
-			align-items: center;
-	border-bottom-right-radius: 20px;
-	border-bottom-left-radius: 20px;
-	transition: background-color 0.5 ease;
-	border-right: 1px solid #FAFAFA;
-} */
-
 .on {
 	background-color: rgba(29, 33, 41, .7);
 	transition: background-color 0.5 ease;
@@ -288,17 +183,12 @@ label[id^='color-input-label-'] {
 }
 
 .ps-item {
-	--color-invert: #FFFFFF;
-	--width: 158px;
-	--height: 150px;
 	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
 	height: 100%;
-	/* width: var(--width);
-	height: var(--height); */
 }
 
 .ps-item .button {
@@ -315,7 +205,7 @@ label[id^='color-input-label-'] {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	background: radial-gradient(circle closest-side, var(--color-invert), transparent);
+	background: radial-gradient(circle closest-side, #FFF, transparent);
 	opacity: 0;
 	-webkit-filter: blur(20px);
 	filter: blur(20px);
@@ -337,7 +227,7 @@ label[id^='color-input-label-'] {
 	position: absolute;
 	z-index: 1;
 	fill: none;
-	stroke: var(--color-invert);
+	stroke: #FFF;
 	stroke-width: 8px;
 	stroke-linecap: round;
 	stroke-linejoin: round;
@@ -404,15 +294,17 @@ label[id^='color-input-label-'] {
   position: absolute;
   z-index: 1;
   fill: none;
-  stroke: var(--color-invert);
+  stroke: #FFF;
   stroke-width: 8px;
   stroke-linecap: round;
   stroke-linejoin: round;
 }
+
 .ps-item .button .power-on .line,
 .ps-item .button .power-off .line {
   opacity: .2;
 }
+
 .ps-item .button .power-on .circle,
 .ps-item .button .power-off .circle {
   opacity: .2;
@@ -423,15 +315,18 @@ label[id^='color-input-label-'] {
   stroke-dasharray: 220;
   stroke-dashoffset: 40;
 }
+
 .ps-item .button .power-on {
   -webkit-filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
           filter: drop-shadow(0px 0px 6px rgba(255, 255, 255, 0.8));
 }
+
 .ps-item .button .power-on .line {
   opacity: 0;
   -webkit-transition: opacity .3s ease 1s;
   transition: opacity .3s ease 1s;
 }
+
 .ps-item .button .power-on .circle {
   opacity: 1;
   stroke-dashoffset: 220;
@@ -440,6 +335,7 @@ label[id^='color-input-label-'] {
   transition: transform 0s ease, stroke-dashoffset 1s ease 0s;
   transition: transform 0s ease, stroke-dashoffset 1s ease 0s, -webkit-transform 0s ease;
 }
+
 .ps-item input {
   position: absolute;
   height: 100%;
@@ -448,6 +344,7 @@ label[id^='color-input-label-'] {
   cursor: pointer;
   opacity: 0;
 }
+
 .ps-item input:checked + .button:after {
   opacity: 0.15;
   -webkit-transform: scale(2) perspective(1px) translateZ(0);
@@ -459,6 +356,7 @@ label[id^='color-input-label-'] {
   transition: opacity .5s ease, transform .5s ease;
   transition: opacity .5s ease, transform .5s ease, -webkit-transform .5s ease;
 }
+
 .ps-item input:checked + .button .power-on,
 .ps-item input:checked + .button .power-off {
   -webkit-animation: click-animation .3s ease forwards;
@@ -466,21 +364,25 @@ label[id^='color-input-label-'] {
   -webkit-transform: scale(1);
           transform: scale(1);
 }
+
 .ps-item input:checked + .button .power-on .line,
 .ps-item input:checked + .button .power-off .line {
   -webkit-animation: line-animation .8s ease-in forwards;
           animation: line-animation .8s ease-in forwards;
 }
+
 .ps-item input:checked + .button .power-on .circle,
 .ps-item input:checked + .button .power-off .circle {
   -webkit-transform: rotate(302deg);
           transform: rotate(302deg);
 }
+
 .ps-item input:checked + .button .power-on .line {
   opacity: 1;
   -webkit-transition: opacity .05s ease-in .55s;
   transition: opacity .05s ease-in .55s;
 }
+
 .ps-item input:checked + .button .power-on .circle {
   -webkit-transform: rotate(302deg);
           transform: rotate(302deg);
