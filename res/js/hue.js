@@ -1,6 +1,6 @@
 
-const hueHost = '192.168.0.228';  // IP address of Hue bridge
-const hueUser = 'VEz4N3-MiNt60BK1cEXiZwlhSfN0gtxSBWmRsn7d' // user token Hue bridge
+const hueHost = 'hue-ip-address';  // IP address of Hue bridge
+const hueUser = 'hue-username' // user token Hue bridge
 const svgUrl = 'http://www.w3.org/2000/svg';
 const xlinkUrl = 'http://www.w3.org/1999/xlink';
 const xmlnsUrl = 'http://www.w3.org/2000/xmlns/';
