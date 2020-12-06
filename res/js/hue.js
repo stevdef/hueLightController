@@ -1,6 +1,6 @@
 
-const hueHost = 'hue bridge ip';  // IP address of Hue bridge
-const hueUser = 'hue user name' // user token Hue bridge
+const hueHost = '192.168.0.228';  // IP address of Hue bridge
+const hueUser = 'VEz4N3-MiNt60BK1cEXiZwlhSfN0gtxSBWmRsn7d' // user token Hue bridge
 const svgUrl = 'http://www.w3.org/2000/svg';
 const xlinkUrl = 'http://www.w3.org/1999/xlink';
 const xmlnsUrl = 'http://www.w3.org/2000/xmlns/';
@@ -63,11 +63,9 @@ let lightsStatus = () => {
 								titleEl.style.color = setTextColor(rgbColor);
 							}
 
-							let colorEl = document.getElementById(`color-input-${index}`);
-							colorEl.addEventListener('change', () => {
-								setColor(index, colorEl.value);
-								colorInputLabelEl = document.getElementById(`color-input-label-${index}`);
-								colorInputLabelEl.innerHTML = colorEl.value.toString().toUpperCase();
+							colorInputEl.addEventListener('change', () => {
+								setColor(index, colorInputEl.value);
+								colorInputLabelEl.innerHTML = colorInputEl.value.toString().toUpperCase();
 							});
 						}
 					}
